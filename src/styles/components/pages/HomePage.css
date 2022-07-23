@@ -1,0 +1,149 @@
+
+#inicio {
+    background-image: url("../../../../public/Imagenes/IronBoxingClub.jpg");
+    background-position: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: auto;
+    /* position: relative; */
+    grid-area: ImgPrinc;
+}
+
+#inicio:hover {
+    transform: scale(1.01);
+    filter: grayscale(70%);
+    transition: all 0.3s ease;
+}
+
+#inicio h1 {
+    visibility: hidden;
+}
+
+#inicio:hover h1 {
+    visibility: visible;
+    position: absolute;
+    z-index: 6;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+}
+
+#div-contacto {
+    background-color: rgb(226, 92, 22);
+    grid-area: Contacto;
+    padding-left: 3%;
+}
+#div-mapa {
+    grid-area: Mapa;
+}
+
+
+.formulario p {
+    color: rgb(44, 31, 27);
+    display: flex;
+    margin-left: 4%;
+}
+
+.formulario p label {
+    color: rgb(44, 31, 27);
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input {
+    width: 70%;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    width: 90%;
+    margin-right: 5px;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    background: #2e64a1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    width: auto;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #6da9ed;
+}
+
+ @media screen and (min-width:200px){
+    #grillainicio{
+        display: grid;
+        grid-template-areas:
+        
+        "ImgPrinc ImgPrinc"
+        "Mapa     Mapa"
+        "Contacto Contacto";
+
+        grid-template-columns: auto ;
+        grid-template-rows:  200px auto;
+    }
+    #inicio:hover h1 {
+        bottom: 4em;
+        left: 1.4em;
+    }
+
+    .formulario p label {
+        min-width: 80px;
+    }
+
+    .formulario textarea {
+        height: 50px;
+    }
+
+    .formulario input[type="submit"] {
+        font-size: 8px;
+        padding: 2px 8px;
+        left: 5rem;
+    }
+}
+
+
+@media screen and (min-width:900px) {
+    #grillainicio{
+        display: grid;
+        grid-template-areas:
+        
+        "ImgPrinc ImgPrinc"
+        "Mapa     Contacto";
+
+        grid-template-columns: auto 35%;
+        grid-template-rows:  700px auto;
+    }
+    #inicio:hover h1 {
+        bottom: 4em;
+        left: 1.4em;
+    }
+
+    .formulario p {
+        display: flex;
+    }
+
+    .formulario p label {
+        min-width: 80px;
+    }
+
+    .formulario textarea {
+        height: 100px;
+    }
+
+    .formulario input[type="submit"] {
+        font-size: 16px;
+        padding: 6px 20px;
+        left: 5rem;
+    }
+}

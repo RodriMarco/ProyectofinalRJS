@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(30, 30, 30);
+}
+.carousel-item {
+    width: 100%;
+}
+
+table th, td{
+    color: rgb(226, 92, 22);
+}
+
+
+ @media screen and (min-width:200px){
+   
+    .carousel-item {
+        height: 200px;
+    }
+
+    table th, td{
+        font-size: 6px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:900px) {
+
+
+    /* CSS Para computadora */
+    .carousel-item {
+        height: 700px;
+    }
+
+    table th, td{
+        font-size: 20px;
+        text-align: center;
+    }
+    /* CSS Para computadora */
+}

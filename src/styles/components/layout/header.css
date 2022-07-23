@@ -1,0 +1,101 @@
+ul#Secciones {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    color: rgb(226, 92, 22);
+    text-shadow: 1px 1px 2px rgb(214, 104, 0);
+}
+
+ ul li a:link {
+    text-decoration: none;
+    color: rgb(226, 92, 22);
+    text-shadow: 1px 1px 2px rgb(226, 92, 10);
+}
+
+ul li a:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+.grilla1{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "Areaimg  AreaSecc";
+
+    grid-template-columns: 20% auto;
+}
+
+#Secc{
+    text-align: left;
+    grid-area: AreaSecc;
+}
+
+#div-logo {
+    margin: auto;
+    z-index: 100;
+    position: relative;
+    grid-area: Areaimg;
+}
+
+ @media screen and (min-width:200px){
+    .grilla1{
+        grid-template-rows: 45px;
+    }
+
+    ul#Secciones {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    ul#Secciones li {
+        float: left;
+        text-align: center;
+    }
+
+    ul#Secciones li a {
+        margin-left: 13px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 10px;
+    }
+
+    #div-logo img{
+        width: 75px;
+        
+    } 
+}
+
+@media screen and (min-width:900px) {
+
+    .grilla1{
+        grid-template-rows: 120px;
+    }
+    ul#Secciones {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    ul#Secciones li {
+        float: left;
+        text-align: center;
+    }
+
+    ul#Secciones li a {
+        padding: 5px 15px 5px 15px;
+        font-size: 30px;
+    }
+
+    #div-logo img{
+        width: 200px;
+        margin: 1%;
+    }
+    /* CSS Para computadora */
+}

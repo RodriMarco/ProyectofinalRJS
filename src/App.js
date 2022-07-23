@@ -1,6 +1,7 @@
 import './App.css';
 
 
+
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import Header from './components/layout/Header';
@@ -25,8 +26,8 @@ function App() {
           <Route path="Equipos" element={<EquiposPage/>}/>
           <Route path="Novedades" element={<NovedadesPage/>}/>
         </Routes>
+        
       </BrowserRouter>
-
       <Footer></Footer>
     </div>
   );

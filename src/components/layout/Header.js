@@ -1,9 +1,10 @@
+import '../../styles/components/layout/header.css'
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <div> 
-      {/* className="grilla1" */}
+    <div className='grilla1'> 
+      
       <div id="div-logo">
         <Link to="/"><img src="Imagenes/logo.png" alt="logo gimnasio" /></Link>
       </div>
