@@ -7,7 +7,7 @@ const ClasesPage = (props) => {
     return (
 
         <Table striped className='table'>
-            {/* class="table" */}
+            
             {/* <a name="horarios"></a> */}
             <thead>
                 <tr>
