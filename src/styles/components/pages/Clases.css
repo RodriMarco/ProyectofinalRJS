@@ -1,6 +1,12 @@
-body {
+.App {
     background-color: rgb(30, 30, 30);
 }
+
+#tabla{
+    display: flex;
+    justify-content: center;
+}
+
 .carousel-item {
     width: 100%;
 }

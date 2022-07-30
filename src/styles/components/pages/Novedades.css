@@ -1,0 +1,19 @@
+
+
+
+section{
+    display: flex;
+    padding-top: 2%;
+    margin-left: 2%;
+    flex-flow: row wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+Card{
+    margin-top: 20px;
+}
+
+Card.Img{
+    height: 450px;
+}

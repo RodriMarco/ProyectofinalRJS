@@ -1,4 +1,6 @@
-
+.App {
+    background-color: rgb(30, 30, 30);
+}
 #inicio {
     background-image: url("../../../../public/Imagenes/IronBoxingClub.jpg");
     background-position: no-repeat;

@@ -1,0 +1,81 @@
+.App {
+    background-color: rgb(30, 30, 30);
+}
+#titulosecc2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+#cuerposecc2{
+    margin: 0;
+    padding: 10%;
+    padding-top:0;
+}
+
+
+
+#titulosecc2{grid-area: Titulo;}
+#Profe1{grid-area: P1;}
+#Profe2{grid-area: P2;}
+#Profe3{grid-area: P3;}
+#Profe4{grid-area: P4;}
+#Profe5{grid-area: P5;}
+#Profe6{grid-area: P6;}
+#Profe7{grid-area: P7;}
+#Profe8{grid-area: P8;}
+#Profe9{grid-area: P9;}
+
+.grillaprofes {
+    margin-top: 10%;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+}
+.grillaprofes div{
+    text-align: center;
+}
+
+ @media screen and (min-width:200px){
+   
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo"
+        "P1" 
+        "P2"
+        "P3"
+        "P4" 
+        "P5"
+        "P6"
+        "P7" 
+        "P8" 
+        "P9" ;
+        grid-column: 100%;
+        grid-template-rows:auto;
+    }
+
+    #titulosecc2 {
+        margin: 2px;
+    }
+}
+
+
+@media screen and (min-width:900px) {
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo Titulo Titulo"
+        "P1 P2 P3"
+        "P4 P5 P6"
+        "P7 P8 P9" ;
+
+        grid-column: 33% 33% 33%;
+        grid-template-rows: 40px 450px;
+    }
+    
+    #titulosecc2 {
+        margin: 10px;
+    }
+}

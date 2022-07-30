@@ -1,0 +1,68 @@
+.App {
+    background-color: rgb(30, 30, 30);
+}
+section{
+    margin-top:50px;
+}
+
+.descequipos {
+    padding: 10%;
+    color: white;
+}
+
+.Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (min-width:200px){
+    .imgredonda {
+        height: 150px;
+        width: 150px;
+        margin: 3px;
+    }
+    /* .container{
+        margin-top: 15%;
+    }
+    .container .imgredonda {
+        height: 120px;
+        width: 120px;
+        margin: 3px;
+    } */
+
+    .descequipos {
+        font-size: 12px;
+        margin: 3px;
+        
+    }
+
+}
+
+
+@media screen and (min-width:900px) {
+
+    .imgredonda {
+        height: 250px;
+        width: 250px;
+        margin: 7px;
+        border-radius: 50%;
+    }
+
+    /* .container{
+        margin-top: 5%;
+    }
+    .container .imgredonda {
+        height: 250px;
+        width: 250px;
+        margin: 3px;
+    } */
+
+    .descequipos {
+        font-size: 25px;
+        margin: 3px;
+    }
+
+
+
+    /* CSS Para computadora */
+}
