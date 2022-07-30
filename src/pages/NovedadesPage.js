@@ -5,7 +5,7 @@ import '../styles/components/pages/Novedades.css'
 
 const NovedadesPage = (props) => {
     return (
-        <section>
+        <section id="novedades">
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src="../../../Imagenes/Novedades/AzuagaMainVI.jpg" />
         <Card.Body>
