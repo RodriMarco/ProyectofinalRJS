@@ -1,44 +1,43 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/NovedadItem';
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+
 
 import '../styles/components/pages/Novedades.css'
 
 const NovedadesPage = (props) => {
-    return (
-        <section id="novedades">
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="../../../Imagenes/Novedades/AzuagaMainVI.jpg" />
-        <Card.Body>
-          <Card.Title>Pelea SemiProfesional</Card.Title>
-          <Card.Text>
-          Este 16 de Julio del 22, Manuel Azuaga, peleador semiprofesional de nuestro team, se enfrentará a Matías Bava en el Main Event VI, en un combate de K1 Rules.
-          </Card.Text>
-          <Button variant="primary">Leer nota</Button>
-        </Card.Body>
-      </Card>
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
 
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="../../../Imagenes/Novedades/AzuagaMainVI.jpg" />
-        <Card.Body>
-          <Card.Title>Pelea SemiProfesional</Card.Title>
-          <Card.Text>
-          Este 16 de Julio del 22, Manuel Azuaga, peleador semiprofesional de nuestro team, se enfrentará a Matías Bava en el Main Event VI, en un combate de K1 Rules.
-          </Card.Text>
-          <Button variant="primary">Leer nota</Button>
-        </Card.Body>
-      </Card>
+    useEffect( () => {
+      const cargarNovedades = async () => {
+        setLoading(true);
+        const response =await axios.get('http://localhost:3000/api/novedades');
+        setNovedades(response.data);
+        setLoading(false);
+      };
 
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="../../../Imagenes/Novedades/AzuagaMainVI.jpg" />
-        <Card.Body>
-          <Card.Title>Pelea SemiProfesional</Card.Title>
-          <Card.Text>
-          Este 16 de Julio del 22, Manuel Azuaga, peleador semiprofesional de nuestro team, se enfrentará a Matías Bava en el Main Event VI, en un combate de K1 Rules.
-          </Card.Text>
-          <Button variant="primary">Leer nota</Button>
-        </Card.Body>
-      </Card>
-
+      cargarNovedades();
+    },[]);
+    
+    return(
+      <section className="holder" >
+        <h2 >
+          Novedades
+        </h2>
+      <section id='novedades'>
+      {loading ? 
+            (
+            <p >Cargando...</p>
+            ) :(
+                novedades.map(item=> <NovedadItem key={item.id}
+                title={item.titulo} notice={item.cuerpo} date={item.fecha} image={item.imagen}/>)
+              )
+          }
+      </section>  
       </section>
     );
 }
