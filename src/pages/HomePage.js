@@ -29,7 +29,7 @@ const HomePage = (props) => {
             <section id='redes'>
                 <a href="https://www.instagram.com/ironboxingclub/" target="blank"><img id='logoRedes' src='logos/instagram.png'></img></a>
                 <Link to="Consultas"> <img id='logoRedes' src='logos/mail.png'></img></Link>
-                <a href="https://goo.gl/maps/jP4xHS7ybzzapyQZA" target="blank"><img id='logoRedes' src='logos/ubicacion.png'></img></a>
+                <a href="https://goo.gl/maps/jP4xHS7ybzzapyQZA" target="blank"><img id='logoRedes' src='Imagenes/ubicacion.png'></img></a>
                 <a href="https://api.whatsapp.com/send/?phone=%2B541162860478&text=Hola+c%C3%B3mo+va+%3F+Estoy+interesado+en+comenzar+a+entrenar&type=phone_number&app_absent=0" target="blank"><img id='logoRedes' src='logos/whatsapp.png'></img></a>
                 <a href="https://open.spotify.com/playlist/07SF3ObWXqHZo55Hf8YKeU?si=40d8db067e9148df"><img id='logoRedes' src='logos/spotify.png'></img></a>
             </section>
