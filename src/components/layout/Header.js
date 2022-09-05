@@ -6,11 +6,12 @@ const Header = (props) => {
     <div className='grilla1'> 
       
       <div id="div-logo">
-        <Link to="/"><img src="Imagenes/logo.png" alt="logo gimnasio" /></Link>
+        <img src="Imagenes/logo.png" alt="logo gimnasio" />
       </div>
 
       <div id="Secc">
         <ul id="Secciones">
+          <li><Link to="/">Inicio</Link></li>
           <li><Link to="Clases">Clases</Link></li>
           <li><Link to="Profesores">Profesores</Link></li>
           <li><Link to="Equipos">Equipos</Link></li>

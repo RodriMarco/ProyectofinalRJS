@@ -1,16 +1,18 @@
 .App {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(255, 255, 255);
 }
 #inicio {
+    margin: 0;
     background-image: url("../../../../public/Imagenes/IronBoxingClub.jpg");
     background-position: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     /* background-attachment: fixed; */
-    height: auto;
-    /* position: relative; */
+    background-color: white;
+    position: relative;
     grid-area: ImgPrinc;
 }
+
 
 #inicio:hover {
     transform: scale(1.01);
@@ -26,21 +28,43 @@
     visibility: visible;
     position: absolute;
     z-index: 6;
-    display: block;
+    /* display: block; */
     color: white;
     font-weight: bold;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 
-#div-contacto {
-    background-color: rgb(226, 92, 22);
-    grid-area: Contacto;
-    padding-left: 3%;
-}
-#div-mapa {
-    grid-area: Mapa;
+
+
+#imagenes{
+    grid-area: Imgs;
+    display: flex;
+    justify-content: space-evenly;
+    margin:0;
+    background-color: white;
+      
 }
 
+#imgportada{
+   
+    margin: 2rem;  
+    height: 350px;
+}
+
+#redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#logoRedes{
+    width: 50px;
+    height:50px;
+}
 
 .formulario p {
     color: rgb(44, 31, 27);
@@ -92,7 +116,7 @@
         "Contacto Contacto";
 
         grid-template-columns: auto ;
-        grid-template-rows:  200px auto;
+        grid-template-rows:  200px auto auto;
     }
     #inicio:hover h1 {
         bottom: 4em;
@@ -120,11 +144,12 @@
         display: grid;
         grid-template-areas:
         
-        "ImgPrinc ImgPrinc"
-        "Mapa     Contacto";
-
-        grid-template-columns: auto 35%;
-        grid-template-rows:  700px auto;
+        "ImgPrinc ImgPrinc ImgPrinc"
+        "Imgs Imgs Imgs"
+        "redes redes redes";
+        gap: 2px;
+        grid-template-columns: auto 33% 33%;
+        grid-template-rows: 580px auto 80px;
     }
     #inicio:hover h1 {
         bottom: 4em;

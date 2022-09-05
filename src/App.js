@@ -12,6 +12,7 @@ import ClasesPage from './pages/ClasesPage';
 import EquiposPage from './pages/EquiposPage';
 import NovedadesPage from './pages/NovedadesPage';
 import ProfesoresPage from './pages/ProfesoresPage';
+import ConsultasPage from './pages/ConsultasPage';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="Profesores" element={<ProfesoresPage/>}/>
           <Route path="Equipos" element={<EquiposPage/>}/>
           <Route path="Novedades" element={<NovedadesPage/>}/>
+          <Route path="Consultas" element={<ConsultasPage/>}/>         
+
         </Routes>
         
       </BrowserRouter>

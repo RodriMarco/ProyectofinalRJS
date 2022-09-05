@@ -1,80 +1,39 @@
+
 import '../styles/components/pages/HomePage.css'
-import { useState} from 'react';
-import axios from 'axios';
+
+
+import { Link } from "react-router-dom";
+
+
 
 const HomePage = (props) => {
-    
-    const initialForm = {
-        nombre: '',
-        email: '',
-        telefono: '',
-        mensaje: ''
-    }
-    
-    const [sending, setSending] = useState(false);
-    const [msg, setMsg] = useState('');
-    const [formData, setFormData] = useState(initialForm);
-
-    const handleChange = e => {
-        const{name, value} = e.target;
-        setFormData(oldData=> ({
-            ...oldData,
-            [name]: value
-        }));
-    }
-    
-    const handleSubmit = async e =>{
-        e.preventDefault();
-        setMsg('');
-        setSending(true)
-        const response = await axios.post('http://localhost:3000/api/contacto', formData);
-        setSending(false);
-        setMsg(response.data.message);
-        if (response.data.error === false){
-            setFormData(initialForm);
-        }
-    }
 
     return (
         <div id="grillainicio">
-            <section id="inicio">
-                <h1>
-                    Iron Boxing Club
-                </h1>
+            <section id='inicio'>
+
             </section>
-            <div id="div-mapa">
-                {/* <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.071938631017!2d-58.44960108419004!3d-34.602342364933705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0ec736c165%3A0x90459508e3cbf126!2sOlaya%201650%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1653265388838!5m2!1sen!2sar"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"/> */}
-            </div>
-            <div id="div-contacto">
-                <h2>Contactate con nosotros:</h2>
-                <form className='formulario' onSubmit={handleSubmit}>
-                    <p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" value={formData.nombre} onChange={handleChange}/>
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" value={formData.email} onChange={handleChange}/>
-                    </p>
-                    <p>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="telefono" value={formData.telefono} onChange={handleChange}/>
-                    </p>
-                    <p>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} cols="30" rows="10"></textarea>
-                    </p>
-                    {sending ? <p>Enviando ...</p> : null}
-                    {msg ? <p>{msg}</p>: null}
-                    <p>
-                        <input type="submit" value="Enviar"/>
-                    </p>
-                </form>
-                
-            </div>
+
+            <section id='imagenes'>
+                <img id='imgportada' src='/Imagenes/Picsart_22-09-03_12-25-34-346.jpg'>
+                </img>
+                <img id='imgportada' src='Imagenes/Picsart_22-09-03_12-26-02-924.jpg'>
+                </img>
+                <img id='imgportada' src='Imagenes/Picsart_22-09-03_12-24-32-688.jpg'>
+                </img>
+            </section>
+
+
+            {/*  */}
+
+            <section id='redes'>
+                <a href="https://www.instagram.com/ironboxingclub/" target="blank"><img id='logoRedes' src='Imagenes/logos/instagram.png'></img></a>
+                <Link to="Consultas"> <img id='logoRedes' src='Imagenes/logos/mail.png'></img></Link>
+                <a href="https://goo.gl/maps/jP4xHS7ybzzapyQZA" target="blank"><img id='logoRedes' src='Imagenes/logos/ubicacion.png'></img></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B541162860478&text=Hola+c%C3%B3mo+va+%3F+Estoy+interesado+en+comenzar+a+entrenar&type=phone_number&app_absent=0" target="blank"><img id='logoRedes' src='Imagenes/logos/whatsapp.png'></img></a>
+                <a href="https://open.spotify.com/playlist/07SF3ObWXqHZo55Hf8YKeU?si=40d8db067e9148df"><img id='logoRedes' src='Imagenes/logos/spotify.png'></img></a>
+            </section>
+
         </div>
 
     );

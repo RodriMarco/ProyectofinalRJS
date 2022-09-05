@@ -1,0 +1,14 @@
+#ConsultasStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    height: 500px;
+}
+
+#div-contacto {
+    background-color: rgb(226, 92, 22);
+    width: 800px;
+    padding-left: 3%;
+}
+

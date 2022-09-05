@@ -1,20 +1,42 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import HorariosItem from '../components/horarios/HorariosItems';
+
 
 import '../styles/components/pages/Clases.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import Carousel from 'react-bootstrap/Carousel';
 
 import Table from 'react-bootstrap/Table';
 
+
 const ClasesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [horarios, setHorarios] = useState([]);
+
+    useEffect(() => {
+        const cargarHorarios = async () => {
+            setLoading(true);
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/horarios`);
+            setHorarios(response.data);
+            setLoading(false);
+        };
+
+        cargarHorarios();
+    }, []);
+
+
     return (
+
         <section>
             <Carousel>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src=""
+                        src="Imagenes/cross.png"
                         alt="First slide"
                     ></img>
                     <Carousel.Caption>
@@ -25,7 +47,7 @@ const ClasesPage = (props) => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        src="Imagenes/kick.jpg"
                         alt="Second slide"
                     ></img>
 
@@ -37,14 +59,14 @@ const ClasesPage = (props) => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src="Imagenes/box.jpg"
                         alt="Third slide"
                     ></img>
 
                     <Carousel.Caption>
                         <h3>Boxeo</h3>
                         <p>
-                        Entrenamientos de Boxeo y Funcional Box adaptadas para las necesidades de cada uno.
+                            Entrenamientos de Boxeo y Funcional Box adaptadas para las necesidades de cada uno.
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -52,76 +74,34 @@ const ClasesPage = (props) => {
 
 
             <section id="tabla">
-                <Table  className='table' id="horarios">
+                <Row className="justify-content-md-center">
+                    <Col md="auto"> <Table className='table' id="horarios">
 
-                    <thead>
-                        <tr>
-                            <th>Hora</th>
-                            <th>Lunes</th>
-                            <th>Martes</th>
-                            <th>Miercoles</th>
-                            <th>Jueves</th>
-                            <th>Viernes</th>
-                            <th>Sabado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>10:30 a 11:30</th>
-                            <td>Kick Boxing (Manu)</td>
-                            <td>Boxeo (Gaston)</td>
-                            <td>Kick Boxing (Manu)</td>
-                            <td>Boxeo (Gaston)</td>
-                            <td>Kick Boxing (Manu)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>16:00 a 17:30</th>
-                            <td>KickBoxing (Juan)</td>
-                            <td></td>
-                            <td>KickBoxing (Juan)</td>
-                            <td></td>
-                            <td>KickBoxing (Juan)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>17:00 a 18:00</th>
-                            <td></td>
-                            <td>Crosstraining (Edu)</td>
-                            <td></td>
-                            <td>Crosstraining (Edu)</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>17:30 a 19:00</th>
-                            <td>Kick Boxing (Eva)</td>
-                            <td></td>
-                            <td>Kick Boxing (Eva)</td>
-                            <td></td>
-                            <td>Kick Boxing (Eva)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>19:00 a 20:30</th>
-                            <td>Boxeo/kick (Antonio)</td>
-                            <td>Boxeo (Fabio)</td>
-                            <td>Boxeo/kick (Antonio)</td>
-                            <td>Boxeo (Fabio)</td>
-                            <td>Boxeo/kick (Antonio)</td>
-                            <td>Boxeo (Fabio)</td>
-                        </tr>
-                        <tr>
-                            <th>20:30 a 22:00</th>
-                            <td>Funcional Box (Ivo)</td>
-                            <td>Kick Boxing (Rodrigo)</td>
-                            <td>Funcional Box (Ivo)</td>
-                            <td>Kick Boxing (Rodrigo)</td>
-                            <td>Funcional Box (Ivo)</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </Table>
+                        <thead>
+                            <tr>
+                                <th>Horario</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miercoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                                <th>Sabado</th>
+                            </tr>
+                        </thead>
+                        {loading ?
+                            (
+                                <p >Cargando...</p>
+                            ) : (
+                                horarios.map(item => <HorariosItem key={item.id}
+                                    time={item.horario} day1={item.dia1} day2={item.dia2} day3={item.dia3} day4={item.dia4} day5={item.dia5} day6={item.dia6} />)
+                            )
+                        }
+                    </Table>
+                    </Col>
+
+
+                </Row>
+
             </section>
         </section>
     );
