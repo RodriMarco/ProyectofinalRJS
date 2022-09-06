@@ -42,7 +42,19 @@
     text-align: center;
 }
 
-.grillaprofes h2, h3, Link{
+.grillaprofes h2 {
+    color: purple;
+    text-shadow: rgb(40, 40, 40);
+    background-color: white;
+    visibility: hidden;
+}
+.grillaprofes h3{
+    color: purple;
+    text-shadow: rgb(40, 40, 40);
+    background-color: white;
+    visibility: hidden;
+}
+.grillaprofes Link{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
