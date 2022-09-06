@@ -25,9 +25,9 @@ ul li a:hover {
     background-color: black;
     display: grid;
     grid-template-areas: 
-    "Areaimg  AreaSecc";
+    "AreaSecc Areaimg ";
 
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto 20% ;
 }
 
 #Secc{
