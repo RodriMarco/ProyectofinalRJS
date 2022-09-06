@@ -3,7 +3,7 @@ import Navigation from './Navigation'
 
 const BarNav = () => {
     return (
-        <div className = 'BarNav'>     
+        <div>     
             <Navigation />
         </div>
     );

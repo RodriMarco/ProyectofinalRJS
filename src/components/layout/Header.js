@@ -10,7 +10,7 @@ const Header = (props) => {
       </div>
 
       <div id="Secc">
-        <BarNav/>
+        < BarNav/>
       </div>
     </div>
   );
