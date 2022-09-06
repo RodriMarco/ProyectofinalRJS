@@ -1,6 +1,6 @@
 import '../../styles/components/layout/header.css'
 
-import BarNav from './BarNav.Js';
+import BarNav from './BarNav';
 const Header = (props) => {
   return (
     <div className='grilla1'> 
