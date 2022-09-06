@@ -3,9 +3,8 @@
 }
 #titulosecc2 {
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-
+    color: purple;
+    text-shadow: 1px 1px 2px  rgb(40, 40, 40);
 }
 
 #cuerposecc2{
@@ -15,7 +14,6 @@
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
-    /* padding: 10%; */
     padding-top:0;
 }
 
@@ -42,13 +40,13 @@
     text-align: center;
 }
 
-.grillaprofes h2 {
+.grillaprofes h2, h3, .Link{
     color: purple;
-    text-shadow: rgb(40, 40, 40);
-    background-color: white;
+    text-shadow: 1px 1px 2px  rgb(40, 40, 40);
+    background-color: rgb(255, 255, 255);
     visibility: none;
 }
-.grillaprofes h3{
+/* .grillaprofes h3{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
@@ -59,7 +57,7 @@
     text-shadow: rgb(40, 40, 40);
     background-color: white;
     visibility: none;
-}
+} */
 
  @media screen and (min-width:200px){
    
@@ -98,7 +96,7 @@
         grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
-    #Profe1 h2, h3, Link:hover{
+    /* #Profe1 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
@@ -129,7 +127,7 @@
     #Profe8 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
-    }
+    } */
 
 
     #titulosecc2 {
