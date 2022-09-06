@@ -1,6 +1,7 @@
 #ConsultasStyle{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 5%;
     height: 500px;
@@ -13,6 +14,7 @@
 }
 
 #formulario{
+    margin-top: 20px;
     border-color: black;
     box-shadow: rgb(203, 203, 203);
 }
