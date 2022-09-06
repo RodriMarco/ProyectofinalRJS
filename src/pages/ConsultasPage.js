@@ -37,7 +37,7 @@ const ConsultasPage = (props) => {
     }
 
     return (
-        <section id='ConsultasStyle'> 
+
             <div id="div-contacto">
                 <h2>Contactate con nosotros:</h2>
                 <form className='formulario' onSubmit={handleSubmit}>
@@ -59,12 +59,8 @@ const ConsultasPage = (props) => {
                         <input type="submit" value="Enviar" />
                     </p>
                 </form>
-
-            </div>
-            <div>
                 <img src="Imagenes/iconos1.png"></img>
             </div>
-        </section>
 
     );
 }

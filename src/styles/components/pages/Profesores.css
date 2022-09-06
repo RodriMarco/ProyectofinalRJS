@@ -30,7 +30,7 @@
 #Profe6{grid-area: P6;}
 #Profe7{grid-area: P7;}
 #Profe8{grid-area: P8;}
-#Profe9{grid-area: P9;}
+
 
 .grillaprofes {
     display: grid;
@@ -42,7 +42,7 @@
     text-align: center;
 }
 
-.grillaprofes h2 h3 Link{
+.grillaprofes h2, h3, Link{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
@@ -78,7 +78,7 @@
     .grillaprofes{
         display: grid;
         grid-template-areas:
-        "Titulo Titulo Titulo Titulo Titulo"
+        "Titulo Titulo Titulo Titulo"
         "P1 P2 P3 P4 "
         "P5 P6 P7 P8 "
         ;
@@ -86,35 +86,35 @@
         grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
-    #Profe1:hover h2 h3 Link{
+    #Profe1:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe2:hover h2 h3 Link{
+    #Profe2:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe3:hover h2 h3 Link{
+    #Profe3:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe4:hover h2 h3 Link{
+    #Profe4:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe5:hover h2 h3 Link{
+    #Profe5:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe6:hover h2 h3 Link{
+    #Profe6:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe7:hover h2 h3 Link{
+    #Profe7:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
-    #Profe8:hover h2 h3 Link{
+    #Profe8:hover h2, h3, Link{
         color: purple;
         visibility: visible;
     }
