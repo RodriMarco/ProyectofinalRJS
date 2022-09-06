@@ -42,19 +42,19 @@ const ConsultasPage = (props) => {
                 <h2>Contactate con nosotros:</h2>
                 <form className='formulario' onSubmit={handleSubmit}>
                     <p>
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre" placeholder='Nombre'></label>
                         <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="email">Email</label>
+                        <label for="email" placeholder='ejemplo@mimail.com'></label>
                         <input type="text" name="email" value={formData.email} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="telefono">Telefono</label>
+                        <label for="telefono" placeholder='11xxxx-xxxx'></label>
                         <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="mensaje">Mensaje</label>
+                        <label for="mensaje" placeholder='Hola, queria obtener más información acerca de...'></label>
                         <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} cols="30" rows="10"></textarea>
                     </p>
                     {sending ? <p>Enviando ...</p> : null}
@@ -64,6 +64,9 @@ const ConsultasPage = (props) => {
                     </p>
                 </form>
 
+            </div>
+            <div>
+                <img src="Imagenes/iconos1.png"></img>
             </div>
         </section>
 
