@@ -1,6 +1,6 @@
 import '../../styles/components/layout/header.css'
 import { Link } from "react-router-dom";
-
+import NavBar from './NavBar'
 const Header = (props) => {
   return (
     <div className='grilla1'> 
@@ -10,13 +10,7 @@ const Header = (props) => {
       </div>
 
       <div id="Secc">
-        <ul id="Secciones">
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="Clases">Clases</Link></li>
-          <li><Link to="Profesores">Profesores</Link></li>
-          <li><Link to="Equipos">Equipos</Link></li>
-          <li><Link to="Novedades">Novedades</Link></li>
-        </ul>
+        < NavBar/>
       </div>
     </div>
   );
