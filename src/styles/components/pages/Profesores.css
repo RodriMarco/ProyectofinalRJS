@@ -42,8 +42,10 @@
     text-align: center;
 }
 
-.grillaprofes h2, h3{
+.grillaprofes h2 h3 Link{
     color: purple;
+    text-shadow: rgb(40, 40, 40);
+    background-color: white;
     visibility: hidden;
 }
 
@@ -77,46 +79,46 @@
         display: grid;
         grid-template-areas:
         "Titulo Titulo Titulo"
-        "P1 P2 P3"
-        "P4 P5 P6"
-        "P7 P8 P9" ;
+        "P1 P2 P3 P4 P5"
+        "P6 P7 P8 P9"
+        ;
 
-        grid-column: 33% 33% 33%;
-        grid-template-rows: 40px 450px;
+        grid-column: 20% 20% 20% 20% 20%;
+        grid-template-rows: auto auto;
     }
-    #Profe1:hover h2, h3{
+    #Profe1:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe2:hover h2, h3{
+    #Profe2:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe3:hover h2, h3{
+    #Profe3:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe4:hover h2, h3{
+    #Profe4:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe5:hover h2, h3{
+    #Profe5:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe6:hover h2, h3{
+    #Profe6:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe7:hover h2, h3{
+    #Profe7:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe8:hover h2, h3{
+    #Profe8:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }
-    #Profe9:hover h2, h3{
+    #Profe9:hover h2 h3 Link{
         color: purple;
         visibility: visible;
     }

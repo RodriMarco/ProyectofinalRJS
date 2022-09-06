@@ -37,7 +37,7 @@ const ConsultasPage = (props) => {
     }
 
     return (
-        <section id='ConsultasStyle'>
+        <section id='ConsultasStyle'> 
             <div id="div-contacto">
                 <h2>Contactate con nosotros:</h2>
                 <form className='formulario' onSubmit={handleSubmit}>
