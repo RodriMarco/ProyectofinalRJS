@@ -42,20 +42,16 @@ const ConsultasPage = (props) => {
                 <h2>Contactate con nosotros:</h2>
                 <form className='formulario' onSubmit={handleSubmit}>
                     <p>
-                        <label for="nombre" placeholder='Nombre'></label>
-                        <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
+                        <input type="text" name="nombre" placeholder='Nombre' value={formData.nombre} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="email" placeholder='ejemplo@mimail.com'></label>
-                        <input type="text" name="email" value={formData.email} onChange={handleChange} />
+                        <input type="text" name="email" placeholder='ejemplo@mimail.com' value={formData.email} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="telefono" placeholder='11xxxx-xxxx'></label>
-                        <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} />
+                        <input type="text" name="telefono"  placeholder='11xxxx-xxxx' value={formData.telefono} onChange={handleChange} />
                     </p>
                     <p>
-                        <label for="mensaje" placeholder='Hola, queria obtener más información acerca de...'></label>
-                        <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" placeholder='Hola, queria obtener más información acerca de...' value={formData.mensaje} onChange={handleChange} cols="30" rows="10"></textarea>
                     </p>
                     {sending ? <p>Enviando ...</p> : null}
                     {msg ? <p>{msg}</p> : null}
