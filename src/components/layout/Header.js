@@ -1,6 +1,6 @@
 import '../../styles/components/layout/header.css'
-import { Link } from "react-router-dom";
-import NavBar from './NavBar'
+
+import BarNav from './BarNav.Js';
 const Header = (props) => {
   return (
     <div className='grilla1'> 
@@ -10,7 +10,7 @@ const Header = (props) => {
       </div>
 
       <div id="Secc">
-        < NavBar/>
+        <BarNav/>
       </div>
     </div>
   );

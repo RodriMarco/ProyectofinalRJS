@@ -3,21 +3,20 @@ ul#Secciones {
     padding: 0;
 }
 
-ul li a {
+.BarNav ul li a {
     list-style: none;
     text-decoration: none;
     margin: 0;
     color: rgb(226, 92, 22);
     text-shadow: 1px 1px 2px rgb(214, 104, 0);
 }
-
- ul li a:link {
+.BarNav ul li a:link {
     text-decoration: none;
     color: rgb(226, 92, 22);
     text-shadow: 1px 1px 2px rgb(226, 92, 10);
 }
 
-ul li a:hover {
+.BarNav ul li a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
