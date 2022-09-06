@@ -51,7 +51,7 @@ const ConsultasPage = (props) => {
                         <input type="text" name="telefono"  placeholder='11xxxx-xxxx' value={formData.telefono} onChange={handleChange} />
                     </p>
                     <p>
-                        <textarea name="mensaje" placeholder='Hola, queria obtener más información acerca de...' value={formData.mensaje} onChange={handleChange} cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" placeholder='Hola, queria obtener más información acerca de...' value={formData.mensaje} onChange={handleChange} cols="30" rows="8"></textarea>
                     </p>
                     {sending ? <p>Enviando ...</p> : null}
                     {msg ? <p>{msg}</p> : null}
