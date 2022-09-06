@@ -29,8 +29,13 @@ ul li a:hover {
     grid-template-columns: auto 20% ;
 }
 
+.Navigation{
+    display: flex;
+    flex-direction: column;
+}
+
 .Hamburger{
-    
+margin-top: 3%;   
 position: absolute;
 left:5%;
 cursor: pointer;
@@ -85,18 +90,27 @@ cursor: pointer;
         grid-template-rows: 120px;
     }
     ul#Secciones {
-        display: inline-block;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 111px;
+        left: 5%;
+        background-color: black;
+        border-top: 6px solid rgb(226, 92, 22); 
+        z-index: 100;
+        align-items: flex-start;
+        padding-right: 2%;
     }
 
-    ul#Secciones li {
-        float: left;
-        text-align: center;
-    }
+    /* .Navigation{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        left: 5%;
+    } */
 
-    ul#Secciones li a {
-        padding: 5px 15px 5px 15px;
+       ul#Secciones li a {
         font-size: 30px;
     }
 
