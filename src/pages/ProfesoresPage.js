@@ -54,12 +54,7 @@ const ProfesoresPage = (props) => {
       <h3>Prueba</h3>
       <Link to="/Clases#horarios">Ver horarios</Link>
     </div>
-    <div id="Profe9">
-      <img class="imgredonda" src="https://dummyimage.com/250" alt=""></img>
-      <h2>Prueba</h2>
-      <h3>Prueba</h3>
-      <Link to="/Clases#horarios">Ver horarios</Link>
-    </div>
+
   </div>
   <img src='Imagenes/iconos2.png'></img>
 </section>

@@ -63,7 +63,7 @@
         "P6"
         "P7" 
         "P8" 
-        "P9" ;
+        ;
         grid-column: 100%;
         grid-template-rows:auto;
     }
@@ -78,12 +78,12 @@
     .grillaprofes{
         display: grid;
         grid-template-areas:
-        "Titulo Titulo Titulo"
-        "P1 P2 P3 P4 P5"
-        "P6 P7 P8 P9"
+        "Titulo Titulo Titulo Titulo Titulo"
+        "P1 P2 P3 P4 "
+        "P5 P6 P7 P8 "
         ;
 
-        grid-column: 20% 20% 20% 20% 20%;
+        grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
     #Profe1:hover h2 h3 Link{
@@ -118,10 +118,7 @@
         color: purple;
         visibility: visible;
     }
-    #Profe9:hover h2 h3 Link{
-        color: purple;
-        visibility: visible;
-    }
+
 
     #titulosecc2 {
         margin: 10px;

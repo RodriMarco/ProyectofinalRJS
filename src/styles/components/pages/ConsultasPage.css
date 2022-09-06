@@ -1,15 +1,16 @@
 #ConsultasStyle{
-    align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin-top: 50px;
     height: 500px;
 }
 
 #div-contacto {
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     width: 800px;
     padding-left: 3%;
     margin-top: 250px;
+    border-color: black;
 }
 
 #formulario{
