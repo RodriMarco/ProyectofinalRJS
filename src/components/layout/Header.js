@@ -1,6 +1,6 @@
 import '../../styles/components/layout/header.css'
 
-import BarNav from './BarNav';
+import Navigation from './Navigation';
 const Header = (props) => {
   return (
     <div className='grilla1'> 
@@ -10,7 +10,7 @@ const Header = (props) => {
       </div>
 
       <div id="Secc">
-        < BarNav/>
+       <Navigation />
       </div>
     </div>
   );
