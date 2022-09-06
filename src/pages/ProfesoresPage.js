@@ -61,6 +61,7 @@ const ProfesoresPage = (props) => {
       <Link to="/Clases#horarios">Ver horarios</Link>
     </div>
   </div>
+  <img src='Imagenes/iconos2.png'></img>
 </section>
     );
 }
