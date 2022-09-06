@@ -29,6 +29,13 @@ ul li a:hover {
     grid-template-columns: auto 20% ;
 }
 
+.Hamburger{
+position: absolute;
+right:5%;
+cursor: pointer;
+}
+
+
 #Secc{
     text-align: left;
     grid-area: AreaSecc;

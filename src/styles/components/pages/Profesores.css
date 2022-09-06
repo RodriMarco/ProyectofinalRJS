@@ -11,7 +11,7 @@
 #cuerposecc2{
     background-image: url("../../../../public/Imagenes/Picsart_22-09-05_20-33-31-537.jpg");
     height: 100%;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
@@ -46,19 +46,19 @@
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
-    visibility: hidden;
+    visibility: none;
 }
 .grillaprofes h3{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
-    visibility: hidden;
+    visibility: none;
 }
 .grillaprofes Link{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
-    visibility: hidden;
+    visibility: none;
 }
 
  @media screen and (min-width:200px){
@@ -98,35 +98,35 @@
         grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
-    #Profe1:hover h2, h3, Link{
+    #Profe1 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe2:hover h2, h3, Link{
+    #Profe2 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe3:hover h2, h3, Link{
+    #Profe3 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe4:hover h2, h3, Link{
+    #Profe4 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe5:hover h2, h3, Link{
+    #Profe5 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe6:hover h2, h3, Link{
+    #Profe6 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe7:hover h2, h3, Link{
+    #Profe7 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
-    #Profe8:hover h2, h3, Link{
+    #Profe8 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
     }
