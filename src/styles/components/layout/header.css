@@ -30,8 +30,9 @@ ul li a:hover {
 }
 
 .Hamburger{
+    
 position: absolute;
-right:5%;
+left:5%;
 cursor: pointer;
 }
 
