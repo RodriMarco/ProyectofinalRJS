@@ -84,7 +84,7 @@
         ;
 
         grid-column: 20% 20% 20% 20% 20%;
-        grid-template-rows: auto auto;
+        grid-template-rows: 100px auto auto;
     }
     #Profe1:hover h2 h3 Link{
         color: purple;
