@@ -93,7 +93,9 @@ cursor: pointer;
 }
 
 @media screen and (min-width:900px) {
-
+    .Hamburger{
+        size: 40px;
+    }
     .grilla1{
         grid-template-rows: 120px;
     }
