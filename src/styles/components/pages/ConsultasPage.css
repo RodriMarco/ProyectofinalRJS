@@ -46,6 +46,13 @@
     background: #3a3a3a;
 }
 
+#titulosform{
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 30px;
+    font-weight: normal;
+}
+
 @media screen and (min-width:200px){
     .formulario{
         width: 380px;
@@ -74,9 +81,10 @@
         height: 30px;
     }
 
-    #iconos1{
+    #iconos1 img{
+        visibility: hidden;
         scale: 0.6551;
-        margin: 0 auto;
+
     }
 }
 
@@ -109,7 +117,9 @@
         height: 50px;
     }
 
-    #iconos1{
+    #iconos1 img{
+        display:block;
+margin:auto;
         scale: 1;
     }
 }

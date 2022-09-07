@@ -11,7 +11,7 @@ import '../styles/components/pages/Novedades.css'
 const NovedadesPage = (props) => {
     const [loading, setLoading] = useState(false);
     const [novedades, setNovedades] = useState([]);
-
+    
     useEffect( () => {
       const cargarNovedades = async () => {
         setLoading(true);
@@ -34,7 +34,7 @@ const NovedadesPage = (props) => {
             <p >Cargando...</p>
             ) :(
                 novedades.map(item=> <NovedadItem key={item.id}
-                title={item.titulo} notice={item.cuerpo} date={item.fecha} image={item.imagen}/>)
+                title={item.titulo} notice={item.cuerpo} date={item.fecha.toLocaleDateString()} image={item.imagen}/>)
               )
           }
       </section>  

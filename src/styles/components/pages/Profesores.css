@@ -29,6 +29,7 @@
 #Profe6{grid-area: P6;}
 #Profe7{grid-area: P7;}
 #Profe8{grid-area: P8;}
+#iconos{grid-area: iconos;}
 
 
 .grillaprofes {
@@ -70,7 +71,8 @@
         "P5"
         "P6"
         "P7" 
-        "P8" 
+        "P8"
+        "iconos" 
         ;
         grid-column: 100%;
         grid-template-rows:auto;
@@ -91,6 +93,7 @@
     }
 
     #iconos{
+        visibility: hidden;
         scale: 0.5;
     }
 }
@@ -103,57 +106,28 @@
         "Titulo Titulo Titulo Titulo"
         "P1 P2 P3 P4 "
         "P5 P6 P7 P8 "
+        "iconos iconos iconos iconos " 
         ;
 
         grid-column: 25% 25% 25% 25%;
-        grid-template-rows: 100px auto auto;
+        grid-template-rows: 100px auto auto auto;
     }
     #profesores h2 {
-        visibility: hidden;
+        visibility: visible;
     }
     #profesores h3{
-        visibility: hidden;
+        visibility: visible;
     }
     #profesores .Link{
-        visibility: hidden;
+        visibility: visible;
     }
 
-    #Profe1:hover h2{ visibility: visible; }
-    #Profe1:hover h3{ visibility: visible; }
-    #Profe1:hover .Link{ visibility: visible; }
-
-    #Profe2:hover h2{ visibility: visible; }
-    #Profe2:hover h3{ visibility: visible; }
-    #Profe2:hover .Link{ visibility: visible; }
-
-    #Profe3:hover h2{ visibility: visible; }
-    #Profe3:hover h3{ visibility: visible; }
-    #Profe3:hover .Link{ visibility: visible; }
-
-    #Profe4:hover h2{ visibility: visible; }
-    #Profe4:hover h3{ visibility: visible; }
-    #Profe4:hover .Link{ visibility: visible; }
-
-    #Profe5:hover h2{ visibility: visible; }
-    #Profe5:hover h3{ visibility: visible; }
-    #Profe5:hover .Link{ visibility: visible; }
-
-    #Profe6:hover h2{ visibility: visible; }
-    #Profe6:hover h3{ visibility: visible; }
-    #Profe6:hover .Link{ visibility: visible; }
-
-    #Profe7:hover h2{ visibility: visible; }
-    #Profe7:hover h3{ visibility: visible; }
-    #Profe7:hover .Link{ visibility: visible; }
-
-    #Profe8:hover h2{ visibility: visible; }
-    #Profe8:hover h3{ visibility: visible; }
-    #Profe8:hover .Link{ visibility: visible; }
     
     #titulosecc2 {
         margin: 10px;
     }
     #iconos{
+
         scale: 1;
     }
 }
