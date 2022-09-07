@@ -1,4 +1,5 @@
 import React from 'react';
+import Moment from 'moment';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -7,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 import '../../styles/components/pages/Novedades.css'
 const NovedadItem = (props) => {
     const {title, image, notice, date, body} = props;
-
+   
     return (
         <div id='news'>
             <Card style={{ width: '18rem' }}>
@@ -18,7 +19,7 @@ const NovedadItem = (props) => {
                     {notice}
                     </Card.Text>
                     <Card.Text>
-                    {date}
+                    {Moment(date).format("DD MM YYYY")}
                     </Card.Text> 
                 </Card.Body>
             </Card> 

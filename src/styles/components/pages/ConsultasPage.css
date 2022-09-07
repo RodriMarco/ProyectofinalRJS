@@ -118,6 +118,7 @@
     }
 
     #iconos1 img{
+        visibility: visible;
         display:block;
 margin:auto;
         scale: 1;

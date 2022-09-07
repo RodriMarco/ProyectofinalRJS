@@ -127,7 +127,7 @@
         margin: 10px;
     }
     #iconos{
-
+        visibility: visible;
         scale: 1;
     }
 }

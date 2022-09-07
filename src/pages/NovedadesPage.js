@@ -34,7 +34,7 @@ const NovedadesPage = (props) => {
             <p >Cargando...</p>
             ) :(
                 novedades.map(item=> <NovedadItem key={item.id}
-                title={item.titulo} notice={item.cuerpo} date={item.fecha.toLocaleDateString()} image={item.imagen}/>)
+                title={item.titulo} notice={item.cuerpo} date={item.fecha} image={item.imagen}/>)
               )
           }
       </section>  
