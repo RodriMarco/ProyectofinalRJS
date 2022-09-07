@@ -12,7 +12,9 @@ const EquiposPage = (props) => {
       </div>
       <div>
         <p className="descequipos">
-          Equipo de kick boxing a cargo de la profesora Eva Jacome Ritcher cinturón negro 3º Dan de la Federación Argentina de Kick Boxing.
+        Somos un equipo de kickboxing iniciado por Eva Jacome Richter (3er dan WAKO) en el año 2012, ubicado en Buenos Aires, Argentina. De forma competitiva y recreativa, practicamos los distintos estilos que abarcan el deporte: full contacto, kickboxing y K1 Style. 
+Creemos que el acceso al deporte es parte de la Salud integral y nuestro team está abierto a todas las personas que quieran practicarlo sin diferenciar género, origen, edad, capacidades.
+Actualmente nos pueden encontrar en Ironboxing Club, en Villa Crespo, CABA.
         </p>
       </div>
     </div>
