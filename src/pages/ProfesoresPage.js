@@ -57,7 +57,7 @@ const ProfesoresPage = (props) => {
     </div>
 
   </div>
-  <img src='Imagenes/iconos2.png'></img>
+  <img src='Imagenes/iconos2.png' id='iconos'></img>
 </section>
     );
 }

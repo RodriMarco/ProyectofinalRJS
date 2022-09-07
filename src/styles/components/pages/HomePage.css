@@ -36,14 +36,7 @@
 
 
 
-#imagenes{
-    grid-area: Imgs;
-    display: flex;
-    justify-content: space-evenly;
-    margin:0;
-    background-color: white;
-      
-}
+
 
 #imgportada{
    
@@ -121,7 +114,7 @@
         grid-area: Imgs;
         display: block;
         justify-content: space-evenly;
-        margin:0;
+        margin:0 auto;
         background-color: white;
         width: 200px;
         height: auto;
@@ -195,5 +188,13 @@
     #logoRedes{
         width: 50px;
         height:50px;
+    }
+    #imagenes{
+        grid-area: Imgs;
+        display: flex;
+        justify-content: space-evenly;
+        margin:0;
+        background-color: white;
+          
     }
 }
