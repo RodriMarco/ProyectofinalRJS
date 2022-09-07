@@ -19,7 +19,7 @@ const NovedadItem = (props) => {
                     </Card.Text>
                     <Card.Text>
                     {date}
-                    </Card.Text>
+                    </Card.Text> 
                 </Card.Body>
             </Card> 
             <div dangerouslySetInnerHTML={{ __html: body}}/>
