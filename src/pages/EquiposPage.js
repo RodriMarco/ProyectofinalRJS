@@ -12,22 +12,14 @@ const EquiposPage = (props) => {
       </div>
       <div>
         <p className="descequipos">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, maxime explicabo placeat laboriosam
-          praesentium
-          id expedita corporis, sit, perferendis aliquid sequi sint repellat esse! Maxime voluptatibus accusamus a
-          atque
-          sint.
+          Equipo de kick boxing a cargo de la profesora Eva Jacome Ritcher cinturón negro 3º Dan de la Federaciòn Argentina de Kick Boxing.
         </p>
       </div>
     </div>
     <div className="Container">
       <div>
         <p className="descequipos">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, maxime explicabo placeat laboriosam
-          praesentium
-          id expedita corporis, sit, perferendis aliquid sequi sint repellat esse! Maxime voluptatibus accusamus a
-          atque
-          sint.
+          Centro de entrenamiento, con especialización en deportes de combate para todos los niveles, desde recreativo hasta en deportistas de alto rendimiento.
         </p>
       </div>
       <div>

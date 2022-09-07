@@ -50,7 +50,7 @@ const ProfesoresPage = (props) => {
           <Link class='Link' to="/Clases#horarios">Ver horarios</Link>
         </div>
         <div id="Profe8">
-          <img class="imgredonda" src="https://dummyimage.com/250" alt=""></img>
+          <img class="imgredonda" src="Imagenes/ProfeEdu.jpg" alt=""></img>
           <h2>Eduardo</h2>
           <h3>CrossTraining</h3>
           <Link class='Link' to="/Clases#horarios">Ver horarios</Link>
