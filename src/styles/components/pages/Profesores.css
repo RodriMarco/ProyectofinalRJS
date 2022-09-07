@@ -15,6 +15,7 @@
     background-position: center center;
     margin: 0;
     padding-top:0;
+    text-align: center;
 }
 
 
@@ -40,23 +41,20 @@
     text-align: center;
 }
 
-#profesores h2{
+#profesores h2 {
     color: purple;
     text-shadow: 1px 1px 2px  rgb(40, 40, 40);
     background-color: rgb(255, 255, 255);
-    visibility: hidden;
 }
 #profesores h3{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
-    visibility: none;
 }
 #profesores .Link{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
-    visibility: none;
 }
 
  @media screen and (min-width:200px){
@@ -78,12 +76,22 @@
         grid-template-rows:auto;
     }
 
+    #profesores h2 {
+        visibility: visible;
+    }
+    #profesores h3{
+        visibility: visible;
+    }
+    #profesores .Link{
+        visibility: visible;
+    }
+ 
     #titulosecc2 {
         margin: 2px;
     }
 
     #iconos{
-        scale: 0.75;
+        scale: 0.5;
     }
 }
 
@@ -100,41 +108,52 @@
         grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
-    #Profe1:hover h2{
-        color: purple;
-        visibility: visible;
+    #profesores h2 {
+        visibility: hidden;
     }
-    #Profe2 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
+    #profesores h3{
+        visibility: hidden;
     }
-    #Profe3 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
+    #profesores .Link{
+        visibility: hidden;
     }
-    #Profe4 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
-    }
-    #Profe5 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
-    }
-    #Profe6 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
-    }
-    #Profe7 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
-    }
-    #Profe8 h2, h3, Link:hover{
-        color: purple;
-        visibility: visible;
-    } 
 
+    #Profe1:hover h2{ visibility: visible; }
+    #Profe1:hover h3{ visibility: visible; }
+    #Profe1:hover .Link{ visibility: visible; }
 
+    #Profe2:hover h2{ visibility: visible; }
+    #Profe2:hover h3{ visibility: visible; }
+    #Profe2:hover .Link{ visibility: visible; }
+
+    #Profe3:hover h2{ visibility: visible; }
+    #Profe3:hover h3{ visibility: visible; }
+    #Profe3:hover .Link{ visibility: visible; }
+
+    #Profe4:hover h2{ visibility: visible; }
+    #Profe4:hover h3{ visibility: visible; }
+    #Profe4:hover .Link{ visibility: visible; }
+
+    #Profe5:hover h2{ visibility: visible; }
+    #Profe5:hover h3{ visibility: visible; }
+    #Profe5:hover .Link{ visibility: visible; }
+
+    #Profe6:hover h2{ visibility: visible; }
+    #Profe6:hover h3{ visibility: visible; }
+    #Profe6:hover .Link{ visibility: visible; }
+
+    #Profe7:hover h2{ visibility: visible; }
+    #Profe7:hover h3{ visibility: visible; }
+    #Profe7:hover .Link{ visibility: visible; }
+
+    #Profe8:hover h2{ visibility: visible; }
+    #Profe8:hover h3{ visibility: visible; }
+    #Profe8:hover .Link{ visibility: visible; }
+    
     #titulosecc2 {
         margin: 10px;
+    }
+    #iconos{
+        scale: 1;
     }
 }
