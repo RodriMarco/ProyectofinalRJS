@@ -5,9 +5,9 @@ const ProfesoresPage = (props) => {
     return (
         <section id="cuerposecc2">
           <h2 id="titulosecc2">Elegi a tu proximo profesor!</h2>
-  <div class="grillaprofes">
+  <div class="grillaprofes" id='profesores'>
     
-    <div id="Profe1">
+    <div id="Profe1"> 
       <img class="imgredonda" src="Imagenes/ProfeEva.jpg"  alt=""></img>
       <h2>Eva Jacome</h2>
       <h3>KickBoxing</h3>

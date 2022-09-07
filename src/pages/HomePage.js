@@ -21,7 +21,7 @@ const HomePage = (props) => {
                 </img>
                 <img id='imgportada' src='Imagenes/Picsart_22-09-03_12-24-32-688.jpg'>
                 </img>
-            </section>
+            </section> 
 
 
          

@@ -40,24 +40,24 @@
     text-align: center;
 }
 
-.grillaprofes h2, h3, .Link{
+#profesores h2{
     color: purple;
     text-shadow: 1px 1px 2px  rgb(40, 40, 40);
     background-color: rgb(255, 255, 255);
     visibility: none;
 }
-/* .grillaprofes h3{
+#profesores h3{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
     visibility: none;
 }
-.grillaprofes Link{
+#profesores .Link{
     color: purple;
     text-shadow: rgb(40, 40, 40);
     background-color: white;
     visibility: none;
-} */
+}
 
  @media screen and (min-width:200px){
    
@@ -96,7 +96,7 @@
         grid-column: 25% 25% 25% 25%;
         grid-template-rows: 100px auto auto;
     }
-    /* #Profe1 h2, h3, Link:hover{
+    #Profe1:hover h2{
         color: purple;
         visibility: visible;
     }
@@ -127,7 +127,7 @@
     #Profe8 h2, h3, Link:hover{
         color: purple;
         visibility: visible;
-    } */
+    } 
 
 
     #titulosecc2 {
