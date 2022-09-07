@@ -12,7 +12,7 @@ const EquiposPage = (props) => {
       </div>
       <div>
         <p className="descequipos">
-          Equipo de kick boxing a cargo de la profesora Eva Jacome Ritcher cinturón negro 3º Dan de la Federaciòn Argentina de Kick Boxing.
+          Equipo de kick boxing a cargo de la profesora Eva Jacome Ritcher cinturón negro 3º Dan de la Federación Argentina de Kick Boxing.
         </p>
       </div>
     </div>
