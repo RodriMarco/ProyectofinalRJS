@@ -19,7 +19,7 @@
     filter: grayscale(70%);
     transition: all 0.3s ease;
 }
-
+ 
 #inicio h1 {
     visibility: hidden;
 }
@@ -34,16 +34,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-
-
-
-
-#imgportada{
-   
-    margin: 2rem;  
-    height: 350px;
-}
-
 #redes{
     grid-area: redes;
     display: flex;
@@ -52,46 +42,6 @@
     align-items: center;
 }
 
-
-.formulario p {
-    color: rgb(44, 31, 27);
-    display: flex;
-    margin-left: 4%;
-}
-
-.formulario p label {
-    color: rgb(44, 31, 27);
-    display: flex;
-    align-items: center;
-}
-
-.formulario p input {
-    width: 70%;
-}
-
-.formulario p:nth-child(4) {
-    align-items: start;
-}
-
-.formulario textarea {
-    width: 90%;
-    margin-right: 5px;
-    resize: none;
-}
-
-.formulario input[type="submit"] {
-    background: #2e64a1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    color: white;
-    width: auto;
-    position: relative;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.formulario input[type="submit"]:hover {
-    background-color: #6da9ed;
-}
 
  @media screen and (min-width:200px){
     #grillainicio{
@@ -113,11 +63,16 @@
     #imagenes{
         grid-area: Imgs;
         display: block;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         margin:0 auto;
         background-color: white;
-        width: 200px;
+
+    }
+
+    #imgportada{
+        margin-top: 20px;  
         height: 200px;
+    
     }
     .formulario p label {
         min-width: 80px;
@@ -153,6 +108,12 @@
         margin:0;
         background-color: white;
           
+    }
+
+    #imgportada{
+        margin: 2rem;  
+        height: 350px;
+    
     }
     
     #grillainicio{

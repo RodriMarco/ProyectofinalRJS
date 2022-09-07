@@ -39,8 +39,8 @@ const ConsultasPage = (props) => {
     return (
 
             <div id="div-contacto">
-                <h2>Contactate con nosotros:</h2>
                 <form className='formulario' onSubmit={handleSubmit}>
+                    <h1> Contactate con nosotros</h1>
                     <p>
                         <input type="text" name="nombre" placeholder='Nombre' value={formData.nombre} onChange={handleChange} />
                     </p>
@@ -56,10 +56,13 @@ const ConsultasPage = (props) => {
                     {sending ? <p>Enviando ...</p> : null}
                     {msg ? <p>{msg}</p> : null}
                     <p>
-                        <input type="submit" value="Enviar" />
+                        <button type="submit" value="Enviar" c>Enviar</button>
                     </p>
                 </form>
-                <img src="Imagenes/iconos1.png"></img>
+                <div id='iconos1'>
+                    <img  src="Imagenes/iconos1.png"></img>
+                </div>
+                
             </div>
 
     );

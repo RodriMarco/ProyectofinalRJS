@@ -1,18 +1,115 @@
 
-#div-contacto {
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 800px;
-    padding-left: 3%;
-    margin-top: 250px;
-    margin-left:25%;
-    border-color: black;
+
+.formulario{
+    background-color: #333333;
+    border: 2px solid #4e4d4d;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: insert 0 0 10px #000;
+    margin: 20px auto;
 }
 
-#formulario{
-    margin-top: 20px;
-    border-color: black;
-    box-shadow: rgb(203, 203, 203);
+.formulario h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
 }
 
+.formulario input {
+    color:#6d6d6d; 
+    text-align:left;
+}
+
+.formulario textarea {
+    color:#6d6d6d; 
+    text-align:left;
+}
+
+.formulario button{
+
+    margin: 0 auto;
+
+    background: #1a1a1a;
+    border: 1px solid #232323;
+    color: #fff;
+    box-shadow: 0px 2px 0px #000;
+    -moz-box-shadow: 0px 2px 0px #000;
+    -webkit-box-shadow: 0px 2px 0px #000;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.formulario button:hover{
+    
+    background: #3a3a3a;
+}
+
+@media screen and (min-width:200px){
+    .formulario{
+        width: 380px;
+    }
+    
+    .formulario h1 {
+        font-size: 17pt;
+        margin: 15px 0px; 
+    }
+    
+    .formulario input {
+        width: 280px;
+        height: 25px;
+        padding: 0px 8px;
+        margin: 5px 15px;
+    }
+    
+    .formulario textarea {
+        width: 280px;
+        padding: 0px 8px;
+        margin: 5px 15px;
+    }
+    
+    .formulario button{
+        width: 88px;
+        height: 30px;
+    }
+
+    #iconos1{
+        scale: 0.6551;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width:900px) {
+    .formulario{
+        width: 580px;
+    }
+    
+    .formulario h1 {
+        font-size: 25pt;
+        margin: 30px 0px; 
+    }
+    
+    .formulario input {
+        width: 480px;
+        height: 35px;
+        padding: 0px 10px;
+        margin: 10px 30px;
+    }
+    
+    .formulario textarea {
+        width: 480px;
+        padding: 0px 10px;
+        margin: 10px 30px;
+    }
+    
+    .formulario button{
+        width: 135px;
+        height: 50px;
+    }
+
+    #iconos1{
+        scale: 1;
+    }
+}

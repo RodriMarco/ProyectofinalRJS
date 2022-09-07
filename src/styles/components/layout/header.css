@@ -58,9 +58,7 @@ cursor: pointer;
     .grilla1{
         grid-template-rows: 45px;
     }
-    .Hamburger{
-        size: 20px;
-    }
+
     ul#Secciones {
         display: flex;
         flex-direction: column;
@@ -68,7 +66,7 @@ cursor: pointer;
         top: 45px;
         left: 5%;
         background-color: black;
-        border-top: 6px solid rgb(226, 92, 22); 
+        border-top: 2px solid rgb(226, 92, 22); 
         z-index: 100;
         align-items: flex-start;
         padding-right: 2%;
@@ -90,12 +88,17 @@ cursor: pointer;
         width: 75px;
         
     } 
+    .Hamburger{
+        margin-top: 1%;  
+        scale: 0.5;
+    }
+    #Secc{
+        align-items: center;
+    }
 }
 
 @media screen and (min-width:900px) {
-    .Hamburger{
-        size: 40px;
-    }
+
     .grilla1{
         grid-template-rows: 120px;
     }
@@ -111,15 +114,11 @@ cursor: pointer;
         align-items: flex-start;
         padding-right: 2%;
     }
-
-    /* .Navigation{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 120px;
-        left: 5%;
-    } */
-
+    .Hamburger{
+        margin-top: 3%;  
+        scale: 1;
+    } 
+   
        ul#Secciones li a {
         font-size: 30px;
     }
