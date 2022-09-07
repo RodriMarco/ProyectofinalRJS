@@ -7,9 +7,9 @@ import { useState } from 'react';
 const Navigation = () => {
     const [open, setOpen] = useState(false);
     
-    const hamburgerIcon = <MdOutlineMenu className='Hamburger' size='40px' color='white' onClick={() => setOpen(!open)}></MdOutlineMenu>
+    const hamburgerIcon = <MdOutlineMenu className='Hamburger' color='white' onClick={() => setOpen(!open)}></MdOutlineMenu>
 
-    const closeIcon = <CgClose className='Hamburger' size='40px' color='white' onClick={() => setOpen(!open)}></CgClose>
+    const closeIcon = <CgClose className='Hamburger'  color='white' onClick={() => setOpen(!open)}></CgClose>
 
     const closeMenu = () => setOpen(false);
 
