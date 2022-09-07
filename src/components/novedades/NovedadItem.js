@@ -19,7 +19,7 @@ const NovedadItem = (props) => {
                     {notice}
                     </Card.Text>
                     <Card.Text>
-                    {Moment(date).format("DD MM YYYY")}
+                    {Moment(date).format("DD/MM/YYYY")}
                     </Card.Text> 
                 </Card.Body>
             </Card> 
